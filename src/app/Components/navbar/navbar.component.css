@@ -1,0 +1,14 @@
+/*.nav-item{
+    display: inline-block;
+    margin-right: 30px;
+}
+.nav{
+    background-color: gray;
+    padding: 30px 10px;
+}
+
+.nav .nav-item a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}*/
