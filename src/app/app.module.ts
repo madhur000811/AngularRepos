@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router'
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
@@ -22,9 +24,11 @@ import { ItemDetailsComponent } from './Components/item-details/item-details.com
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path: 'items', component: HomeComponent },
-      {path: 'item-details/:index', component: ItemDetailsComponent}
+      {path: 'item-details/:index', component: ItemDetailsComponent},
+      {path:'', redirectTo:'items', pathMatch:'full'}
     ])
   ],
   providers: [],
